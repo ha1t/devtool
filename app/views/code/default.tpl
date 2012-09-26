@@ -3,8 +3,14 @@
 {% block js %}
 <script src="{{ url('js/code.js') }}"></script>
 <link rel="stylesheet" href="{{ url('highlight/styles/github.css') }}">
+<link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" />
 <script src="{{ url('highlight/highlight.pack.js') }}"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<style type="text/css">
+code {
+  font-family: "Source Code Pro", sans-serif;
+}
+</style>
 {% endblock %}
 
 
