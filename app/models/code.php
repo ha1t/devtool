@@ -1,11 +1,14 @@
 <?php
-
 class Code extends AppModel
 {
     public $user = null;
 
     /**
      * $code_pack_idに紐付く全てのCodeを取得する
+     *
+     * @param User $user
+     * @param int $code_pack_id
+     * @return Code[]
      */
     public static function getAll(User $user, $code_pack_id)
     {
@@ -21,6 +24,12 @@ class Code extends AppModel
         return $codes;
     }
 
+    /**
+     *
+     * @param User $user
+     * @param int $code_id
+     * @return Code
+     */
     public static function get(User $user, $code_id)
     {
         $db = DB::conn();
