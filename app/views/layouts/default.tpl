@@ -50,7 +50,6 @@
 {% endblock %}
 
 <footer>
-Developer is maruyama-r. Created using <a href="https://github.com/dietcake/dietcake.github.com">DietCake</a>
 </footer>
 </body>
 
